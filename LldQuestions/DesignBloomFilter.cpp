@@ -8,7 +8,7 @@ enum class HashType {
 
 class HashStrategy{
 public:
-    virtual ~HashStrategy(){}
+    virtual ~HashStrategy() = default ;
     virtual int64_t hash(const string & data) const = 0;
 };
 
